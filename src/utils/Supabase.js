@@ -1,9 +1,6 @@
-function Login() {
-    return (
-        <div className="App-header">
-            Test
-        </div>
-    )
-}
+import { createClient } from '@supabase/supabase-js'
 
-export default Login;
+const supabaseUrl = ""
+const supabaseAnonKey = ""
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
