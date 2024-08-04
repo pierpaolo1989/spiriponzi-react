@@ -69,9 +69,9 @@ function Visualization(
     }, [expenses, incomes]);
 
     return (
-        <div className="visualization">
+        <div className="visualization font-bold">
             <h2>Financial Visualization</h2>
-            <p>
+            <p className="font-bold">
                 Total Expenditure:
                 ${totalExpenditure.toFixed(2)}
             </p>

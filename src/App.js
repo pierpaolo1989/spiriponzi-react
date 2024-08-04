@@ -7,6 +7,7 @@ import './App.css';
 import ExpenseTracker from './components/ExpenseTracker';
 import IncomeTracker from './components/IncomeTracker';
 import Visualization from './components/Visualization';
+import Navbar from './components/Navbar';
 // Import your CSS file
 
 function App() {
@@ -57,7 +58,8 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Personal Budgeting App</h1>
+            <Navbar />
+            <h1 className='font-bold mt-5'>Budgeting</h1>
             <div className="tracker-container">
                 <ExpenseTracker onAddExpense={addExpense} />
                 <IncomeTracker onAddIncome={addIncome} />
