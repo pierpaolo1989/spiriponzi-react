@@ -12,7 +12,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />}>
-            <Route index element={<MainPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NoPage />} />
           </Route>

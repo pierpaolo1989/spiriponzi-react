@@ -20,6 +20,7 @@ function IncomeTracker({ onAddIncome }) {
     return (
         <div className="income-tracker w-full max-w-2xl mt-10">
             <h2 className='font-bold'>Income Tracking</h2>
+            <div className="input-group mt-5">
             <input
                 type="number"
                 className="shadow appearance-none border border-black-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
@@ -39,6 +40,7 @@ function IncomeTracker({ onAddIncome }) {
                 onClick={handleAddIncome}>
                 Add income
             </button>
+            </div>
         </div>
     );
 }

@@ -23,7 +23,7 @@ function ExpenseTracker({ onAddExpense }) {
     return (
         <div className="tracker w-full max-w-2xl mt-10">
             <h2 className='font-bold'>Add Expense</h2>
-            <div className="input-group">
+            <div className="input-group mt-5">
                 <input
                     type="text"
                     className="shadow appearance-none border border-black-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
