@@ -34,8 +34,8 @@ function Visualization(
         // Create a new chart
         const svg = d3.select(svgRef.current);
 
-        const width = 400;
-        const height = 200;
+        const width = 800;
+        const height = 400;
 
         const xScale = d3.scaleBand().domain(
             data.map((d) => d.description))
@@ -70,21 +70,21 @@ function Visualization(
 
     return (
         <div className="visualization font-bold">
-            <h2>Financial Visualization</h2>
-            <p className="font-bold">
+            <h2 className='text-xl'>Financial Visualization</h2>
+            <p className="font-bold text-md">
                 Total Expenditure:
                 ${totalExpenditure.toFixed(2)}
             </p>
-            <p>
+            <p className="font-bold text-md">
                 Remaining Income:
                 ${remainingIncome.toFixed(2)}
             </p>
-            <p>
-                Percentage Expended:
+            <p className="font-bold text-md">
+                Percentage Expended:&nbsp;
                 {percentageExpended.toFixed(2)}%
             </p>
-            <svg ref={svgRef}
-                width={500} height={250}></svg>
+            <svg ref={svgRef} className='mt-10'
+                width={1000} height={500}></svg>
         </div>
     );
 }

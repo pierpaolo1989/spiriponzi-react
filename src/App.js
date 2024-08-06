@@ -6,17 +6,20 @@ import NoPage from './pages/NoPage';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Portfolio from './pages/Portfolio';
+import Footer from './components/layout/Footer';
+import PortfolioTracker from './components/PortfolioTracker';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar isLoggedIn={false}/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<PortfolioTracker />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

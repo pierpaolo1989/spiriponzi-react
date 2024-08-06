@@ -20,9 +20,26 @@ function Login() {
     setLoading(false)
   }
 
+  const handleSignInWithGitHub = async (event) => {
+    
+  }
+
   return (
     <div className="flex items-center justify-center h-screen">
     <div class="w-full max-w-lg">
+    <h1 className="text-3xl font-semibold text-center text-white">
+                  Sign in to your account
+                </h1>
+        
+                <div className="flex flex-col p-6">
+                  <button
+                    className="text-lg text-white font-semibold bg-gray-900 py-2 px-4 rounded-md focus:outline-none focus:ring-2"
+                    onClick={handleSignInWithGitHub}
+                  >
+                    Sign In with GitHub
+                  </button>
+        
+                  <hr className="bg-gray-600 border-0 h-px my-8" />
     <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -46,6 +63,7 @@ function Login() {
         </a>
       </div>
     </form>
+    </div>
   </div>
   </div>
   )

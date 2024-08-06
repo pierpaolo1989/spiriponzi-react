@@ -51,7 +51,7 @@ function MainPage() {
     };
     return (
         <div className="App">
-            <h1 className='font-bold mt-5 text-2xl'>Budgeting</h1>
+            <h1 className='font-bold mt-10 text-2xl'>Budgeting</h1>
             <div className="tracker-container flex justify-around">
                 <ExpenseTracker onAddExpense={addExpense} />
                 <IncomeTracker onAddIncome={addIncome} />
